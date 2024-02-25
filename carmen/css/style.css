@@ -1,6 +1,7 @@
 header ul
 {
   list-style-type: none;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   width: 25%;
@@ -33,7 +34,6 @@ header li a:hover:not(.active) {
 body
 {
   background-color: #cca69b;
-  justify-content: center;
 }
 .intro
 {
@@ -43,13 +43,38 @@ body
 {
   padding: 6%;
 }
-/*---------------texto---------------*/
-h1, p
+/*---------------texto: centrado y fuente ---------------*/
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h1, h4, p
 {
   text-align: left;
 }
+.recomendaciones p
+{
+  font-size: 18px;
+}
+.recomendaciones h4
+{
+  font-size: 20px;
+}
 
 /*-------------botón----------------*/
+.wrapper
+{
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 2%;
+}
 .wrapper a
 {
   display: block;
@@ -135,3 +160,21 @@ h1, p
   height: 100%;
 }
 /*----------footer--------*/
+.footer
+{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #cca69b;
+  color: #333;
+  text-align: center;
+}
+.footer p
+{
+  font-size: 10px;
+}
+.creditos
+{
+  text-align: center;
+  padding-bottom: 2%;
+}

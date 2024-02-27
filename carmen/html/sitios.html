@@ -1,186 +1,99 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sitios.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Col-Viajes</title>
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/carmen/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+   
+    <title>Inicio</title>
 </head>
-
 <body>
     <header>
-        <div class="cabecera">
-            <img src="img/icono.png" alt="" id="logo">
-        </div>
-        <div class="barra">
-            <nav>
-                <ul>
-                    
-                    <li><a href="Contacto.html">Carmen de  el viboral Antioquia</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="iconos">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+        <ul class="libre-baskerville-regular">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cultura.html">Cultura</a></li>
+            <li><a href="restaurantes.html">Gastronomía</a></li>
+            <li><a href="" class="active">Explorar</a></li>
+          </ul>
     </header>
-    <main>
-        <div class="fila">
-            <div class="columna1">
-                <section class="targetas"><br>
-                    <div class="card">
-                        <div class="face front">
-                            <img src="img/guatape.jpg" alt="">
-                            <h2>CULTURA</h2>
-                        </div>
-                        <div class="face back">
-                            <h3>Guatape y el Peñol</h3>
-                            <p>Guatape es una ciudad de calles coloridas, y aquí aprieta el calor y la humedad, con lo que aprovecha para pasear por sus calles con un zumo fresquito de sus frutas tropicales.Lo más popular de Guatape es el peñol. Una roca gigantesca con unas increíbles vistas de 360º desde arriba. Para subir debes ascender 750 escalones. El esfuerzo vale la pena.</p>
-                            <a href="">Mas detalles</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="face front">
-                            <img src="img/Canocristal.jpg" alt="">
-                            <h2>RESTAURANTES</h2>
-                        </div>
-                        <div class="face back">
-                            <h3>Caño Cristales, Meta</h3>
-                            <p>Ubicado en la sierra de la Macarena en el Meta, se encuentra Caño Cristales, llamado por muchos portales de turismo a nivel internacional como el “río más hermoso del mundo”. Esto es debido a los diversos colores que se pueden observar en el fondo gracias a la presencia de plantas acuáticas que le dan esas tonalidades características.</p>
-                            <a href="">Mas detalles</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="face front">
-                            <img src="img/santuarioLajas.jpg" alt="">
-                            <h2>PLANES TURISTICOS</h2>
-                        </div>
-                        <div class="face back">
-                            <h3>Santuario de las Lajas, Nariño</h3>
-                            <p>El Santuario de las Lajas es una iglesia católica ubicada en Ipiales, sobre el cañón del río Guáitara, muy cercana a la frontera con Ecuador. La construcción es de estilo neogótico y está hecha en piedra gris y blanca. Ha sido catalogada como una de las iglesias más bonitas del mundo por el diario británico The Telegraph. Hoy en día es uno de los principales sitios turísticos del departamento de Nariño.</p>
-                            <a href="">Mas detalles</a>
-                        </div>
-                    </div>
-                </section>   
+    <main style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <div class="intro">
+    <h1 class="libre-baskerville-bold">Quien visita El Carmen de Viboral siempre quiere volver</h1>
+    <p class="libre-baskerville-regular">Al llegar a este municipio con tradición ceramista, el plan ideal es conocer los espacios cargados con valor histórico y cultural. </p>
+    <div class="wrapper">
+        <a href="#"><span>Conoce más</span></a>
+      </div>
+    </div>
+ <div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-3">
+                <p class="text-white"><img src="carmen.jpg" alt="Imagen del item" style="max-width: 300px;"></p>
+        </div>
+        <div class="col-lg-3">
+                <p class="text-white">A medida que la población fue creciendo, los habitantes empezaron a practicar la ganadería, la agricultura y la explotación de bosques primitivos. En el año 1787 trajeron desde Quito, Ecuador, la imagen de Nuestra Señora del Carmen.</p>
+        </div>
+        <div class="col-lg-3">
+                <p class="text-white"><div class="wrapper">
+                    <a href="#"><span>Conoce más</span></a>
+                  </div></p>
+        </div>
+    </div> <!-- Cierra correctamente el primer div.row -->
+</div> <!-- Mueve esta etiqueta de cierre al final del contenedor -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="bg-primary p-3">
+                <p class="text-white"><img src="carmen.jpg" alt="Imagen del item" style="max-width: 100px;"></p>
             </div>
-        <div class="columna2">
-            <div class="container mt-5">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Imagen</th>
-                      <th scope="col">Descripción</th>
-                      <th scope="col">Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Aquí irán tus datos, puedes agregar más filas según sea necesario -->
-                    <tr>
-                      <td><img src="ruta_de_la_imagen.jpg" alt="Imagen del item" style="max-width: 100px;"></td>
-                      <td>Descripción del item</td>
-                      <td>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInfo">
-                          Ver más
-                        </button>
-                      </td>
-                    </tr>
-                    <!-- Fin de los datos -->
-              
-                    <!-- Agrega más filas según sea necesario -->
-              
-                  </tbody>
-                </table>
-              
-                <!-- Paginación -->
-                <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <!-- Puedes agregar más elementos de paginación aquí -->
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <!-- Fin de elementos de paginación -->
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- Fin de la paginación -->
-              
-                <!-- Modal de información adicional -->
-                <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Información Adicional</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <!-- Aquí puedes agregar más detalles del item -->
-                        <p>Detalles del item</p>
-                        <!-- Fin de los detalles -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fin del modal -->
-              
-              </div>
-              
-
         </div>
-
+        <div class="col-lg-3">
+            <div class="bg-secondary p-3">
+                <p class="text-white">A medida que la población fue creciendo, los habitantes empezaron a practicar la ganadería, la agricultura y la explotación de bosques primitivos. En el año 1787 trajeron desde Quito, Ecuador, la imagen de Nuestra Señora del Carmen.</p>
+            </div>
         </div>
+        <div class="col-lg-3">
+            <div class="bg-primary p-3">
+                <p class="text-white"><div class="wrapper">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#modalInfo"><span>Conoce más</span></a>
+                  </div></p>
+            </div>
+        </div>
+    </div> <!-- Cierra correctamente el primer div.row -->
+</div> <!-- Mueve esta etiqueta de cierre al final del contenedor -->
+<div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Información Adicional</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Aquí puedes agregar más detalles del item -->
+          <p>Detalles del item</p>
+          <!-- Fin de los detalles -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+    
+    <div class="footer">
+        <hr>
+        <p>Descubre El Carmen de Viboral, una joya escondida en Antioquia, Colombia. Explora este maravilloso lugar de mano de nuestra plataforma informativa. Revisamos constantemente nuestro contenido para precisión, pero entendemos que mientras usas nuestro sitio, aceptas nuestra <a href="">política de privacidad</a> y <a href="">terminos y condiciones</a>.
+        <br>¡Bienvenido a la esencia de El Carmen de Viboral!</p>
+        <br>
+        <p class="creditos">
+        @ 2024 El Carmen de Viboral. Todos los derechos reservados.</p>
+    </div>
     </main>
-
-
-
-
-
-
-    <footer><!--Pie de pagina -->
-        <div id="pie">
-            <div class="pieder">
-                <img src="img/icono.png" alt="" id="logo">
-                <h2>Col-Viajes</h2>
-                <p>Compañia Colombiana de viejes con excelentes paquetes y destinos turisticos. ¡lugares exoticos y de
-                    difil axceso es nuestra especialidad!</p>
-            </div>
-
-            <div class="pieizq">
-                <h4>Creado por : </h4>
-                <p>Diomer Alexander Rua Rua</p>
-                <p>Correo :</p>
-                <p>Diomer.rua.r@gmail.com</p>
-
-                <h2>Redes</h2>
-                <img src="img/y.png" alt="" class="imagen">
-                <img src="img/f.png" alt="" class="imagen">
-                <img src="img/i.png" alt="" class="imagen">
-                <img src="img/g.png" alt="" class="imagen">
-                <img src="img/w.png" alt="" class="imagen">
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"></script>
-    </footer>
-
-</body>
-
 </html>

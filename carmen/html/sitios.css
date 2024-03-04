@@ -71,9 +71,9 @@ h1, h4, p
 /*-------------botón----------------*/
 .wrapper
 {
-  padding-left: 35%;
-  padding-right: 35%;
-  padding-top: 2%;
+  position: relative;
+  bottom: -190px;
+  left: 0;
 }
 .wrapper a
 {
@@ -120,6 +120,7 @@ h1, h4, p
 {
   display: flex;
   width: 100%;
+  position: static;
   padding: 4% 2%;
   box-sizing: border-box;
   height: 100vh;
@@ -182,20 +183,23 @@ h1, h4, p
 {
   display: flex;
   width: auto;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
-  background-color: #f2eee5;
   border-radius: 15px 15px 15px 15px; 
-  border: 4px dashed green;
+  border: 4px solid green;
+  margin: 0px;
+  padding: 0px;
 }
 .fila  p  img
 {
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
   flex: 1%;
-  width: 245px;
-  height: 283px;
+  width: 100%;
+  height: 250px;
   float: left;
-  position: absolute;
+  left: 0;
+  bottom: 0;
+  position: relative;
   border-radius: 5px 5px 5px 5px; 
 }
 .fila p
@@ -203,4 +207,10 @@ h1, h4, p
   text-align: justify;
   position: relative;
   float: left;
+}
+.fila div h3
+{
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 25px;
 }

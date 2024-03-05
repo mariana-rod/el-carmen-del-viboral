@@ -119,6 +119,7 @@ h1, h4, p
 .container
 {
   display: flex;
+  flex-direction: column;
   width: 100%;
   position: static;
   padding: 4% 2%;
@@ -213,4 +214,93 @@ h1, h4, p
   letter-spacing: 2px;
   text-align: center;
   font-size: 25px;
+}
+.modal-fondo
+{
+  background-color: rgba(204,166,155,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modal-contenido
+{
+  background-color: #f2eee5;
+  display: table-cell;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+/*--------------cards-------------*/
+.card {
+  position: relative;
+  width: 100%;
+  height: 300PX;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  box-shadow: 0 5px 10px black;
+  transform: perspective(800px) rotateY(0);
+
+  /*falta propiedad */
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.card .front h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, .4);
+  text-align: center;
+  color: gold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 45px;
+}
+
+.card .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(68, 19, 133);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 10px black;
+  transform: perspective(800px) rotateY(180deg);
+
+  /*Falta propiedad */
+}
+
+.card:hover .front {
+  transform: perspective(800px) rotateY(180deg);
+
+
+}
+
+.card:hover .back {
+  transform: perspective(800px) rotateY(360deg);
+
 }

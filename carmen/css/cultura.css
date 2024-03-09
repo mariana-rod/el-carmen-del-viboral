@@ -160,9 +160,41 @@ p
 }
 
 .title-font {
-  font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+  font-size: 24px; 
 }
 
 .spacer {
   height: 40px;
+}
+
+
+/*Responsive*/
+main {
+  margin-left: 15%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media (max-width: 768px) {
+  main {
+      margin-left: 0;
+      padding: 1px;
+  }
+
+  .card-row {
+      flex-direction: column;
+  }
+
+  .card {
+      width: 100%;
+  }
+}
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+  margin-bottom: 20px;
 }

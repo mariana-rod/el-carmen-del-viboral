@@ -11,9 +11,9 @@ let Sitios=[
             "ideal para una buena fotografía que recuerde la visita."
         ],
         "imagenes":[
-            "images/pdaT.jpg",
-            "images/pdac1.jpeg",
-            "images/pdac2.jpg"
+            "/carmen/images/pdaT.jpg",
+            "/carmen/images/pdac1.jpeg",
+            "/carmen/images/pdac2.jpg"
         ]
     },
     {
@@ -28,9 +28,9 @@ let Sitios=[
             "Flores, maíz, hojas, tazas, platos y poemas de José Manuel Arango, están cuidadosamente plasmadas en las paredes."
         ],
         "imagenes":[
-            "images/cdlcT.webp",
-            "images/cdlcc1.jpg",
-            "images/cdlcc2.webp"
+            "/carmen/images/cdlcT.webp",
+            "/carmen/images/cdlcc1.jpg",
+            "/carmen/images/cdlcc2.webp"
         ]
     }
 ];

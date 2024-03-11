@@ -42,6 +42,11 @@ body
 .recomendaciones
 {
   padding: 6%;
+  padding-bottom: 8%;
+}
+.info
+{
+  padding: 6%;
 }
 /*---------------texto: centrado y fuente ---------------*/
 .libre-baskerville-regular {
@@ -55,7 +60,7 @@ body
   font-weight: 700;
   font-style: normal;
 }
-h1, h4, p
+h1, h4, h3, h2, p
 {
   text-align: left;
 }
@@ -66,6 +71,13 @@ h1, h4, p
 .recomendaciones h4
 {
   font-size: 20px;
+}
+.info p
+{
+  font-size: 18px;
+}
+.info h3 {
+  font-size: 20px ;
 }
 
 /*-------------botón----------------*/
@@ -177,4 +189,10 @@ h1, h4, p
 {
   text-align: center;
   padding-bottom: 2%;
+}
+/*img de informacion*/
+.ampliar img
+{
+  width: 700px;
+  height: auto;
 }

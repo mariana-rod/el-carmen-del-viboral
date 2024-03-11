@@ -117,18 +117,30 @@ let Sitios=[
             "/carmen/images/ecbc1.jpeg",
             "/carmen/images/ecbc2.jpg"
         ]
+    },
+    {
+        "titulo":"El Rio Melcocho",
+        "descripcion":"nace en la vereda El Porvenir, municipio de El Carmen de Víboral, luego pasa por la vereda La Cristalina (El Carmen de Víboral), después recorre varias veredas del municipio de Cocorná se une a el Rio Santo Domingo, en el sitio conocido como Los Encuentros, allí continúa su recorrido, se une a El Samaná y de esta manera llega a el río Magdalena.",
+        "tipo":"Tours naturaleza",
+        "calificacion":5,
+        "lugar":"vereda El Porvenir Municipio del Carmen de Viboral, Antioquia",
+        "planes":[
+            "Tiene bosques que se ubican a sus alrededores Al interior de estos senderos se encuentra una variedad de flora y fauna, ideales para realizar caminatas y disfrutar del delicioso aroma de las plantas.",
+            "lugar perfecto para conectarse con la naturaleza y relajarse explorando la zona, la cual posee una riqueza hídrica y natural sorprendente."
+        ],
+        "imagenes":[
+            "/carmen/images/rmT.jpg",
+            "/carmen/images/rmc1.jpg",
+            "/carmen/images/rmc2.jpg"
+        ]
     }
 
 ];
 
-// Suponiendo que tienes el array Sitios definido anteriormente
 
-// Obtén el contenedor donde deseas agregar la información
 const contenedor = document.querySelector('.container');
 
-// Recorre el array Sitios
 Sitios.forEach((sitio, indice) => {
-    // Crea los elementos HTML dinámicamente
     const divRow = document.createElement('div');
     divRow.classList.add('row', 'fila');
 
@@ -161,14 +173,11 @@ Sitios.forEach((sitio, indice) => {
     divCol3.appendChild(divwraper);
     
 
-    // Agrega las columnas al divRow
     divRow.appendChild(divCol1);
     divRow.appendChild(divCol2);
     divRow.appendChild(divCol3);
 
-    // Agrega el divRow al contenedor principal
     contenedor.appendChild(divRow);
-    // Suponiendo que tienes un botón o evento que abre el modal, puedes agregar un evento de clic a esos elementos
 
 });
 
@@ -185,7 +194,6 @@ const card2 = document.getElementById('back');
 
 
 
-// Función para cargar la información del sitio en el modal
 function cargarInformacionModal(sitio) {
   modalTitulo.textContent = sitio.titulo;
   modalDescripcion.textContent = sitio.descripcion;
@@ -198,10 +206,8 @@ function cargarInformacionModal(sitio) {
   imgcard2.src = sitio.imagenes[2];
   card1.appendChild(imgcard1);
   card2.appendChild(imgcard2);
-  // Limpiar contenido anterior de calificación
   modalCalificacion.innerHTML = '';
   
-  // Agregar estrellas de calificación al modal
   for (let i = 0; i < sitio.calificacion; i++) {
     const starSpan = document.createElement('span');
     starSpan.classList.add('star');
@@ -209,17 +215,14 @@ function cargarInformacionModal(sitio) {
     modalCalificacion.appendChild(starSpan);
   }
 
-  // Limpiar contenido anterior de planes
   modalPlanes.innerHTML = '';
   
-  // Agregar planes al modal
   sitio.planes.forEach(plan => {
     const listItem = document.createElement('li');
     listItem.textContent = plan;
     modalPlanes.appendChild(listItem);
   });
 
-  // Mostrar el modal
   const myModal = new bootstrap.Modal(modalContenedor);
   myModal.fade();
 }

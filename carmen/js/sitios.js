@@ -1,7 +1,7 @@
 let Sitios=[
     {
         "titulo":"Paseo del Ángel",
-        "descripcion":"El Paseo del Ángel es un lugar mágico del Carmen de Viboral! en el que encontrarás todo lo que necesitas. Queremos que vivas una experiencia única donde el comercio se une con el arte, el diseño, la gastronomía, la fotografía, las artesanías, el color y la magia de su gente.",
+        "descripcion":"El Paseo del Ángel es un lugar mágico del Carmen de Viboral en el que encontrarás todo lo que necesitas. Queremos que vivas una experiencia única donde el comercio se une con el arte, el diseño, la gastronomía, la fotografía, las artesanías, el color y la magia de su gente.",
         "tipo":"Monumentos y lugares de interés",
         "calificacion":5,
         "lugar":"Cra. 31 #28-36, El Carmen de Viboral, Antioquia",

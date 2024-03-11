@@ -130,7 +130,6 @@ h1, h4, p
   position: static;
   padding: 4% 2%;
   box-sizing: border-box;
-  min-height: 100vh;
 }
 .box
 {

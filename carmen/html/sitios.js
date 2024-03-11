@@ -11,9 +11,9 @@ let Sitios=[
             "ideal para una buena fotografía que recuerde la visita."
         ],
         "imagenes":[
-            "img/pdaT.jpg",
-            "img/pdac1.jpeg",
-            "img/pdac2.jpg"
+            "/carmen/images/pdaT.jpg",
+            "/carmen/images/pdac1.jpeg",
+            "/carmen/images/pdac2.jpg"
         ]
     },
     {
@@ -28,9 +28,9 @@ let Sitios=[
             "Flores, maíz, hojas, tazas, platos y poemas de José Manuel Arango, están cuidadosamente plasmadas en las paredes."
         ],
         "imagenes":[
-            "img/cdlcT.webp",
-            "img/cdlcc1.jpg",
-            "img/cdlcc2.webp"
+            "/carmen/images/cdlcT.webp",
+            "/carmen/images/cdlcc1.jpg",
+            "/carmen/images/cdlcc2.webp"
         ]
     },
     {
@@ -46,9 +46,9 @@ let Sitios=[
             "Caminaremos en gran parte por antiguos senderos en medio del bosque que van a lo largo del rio."
         ],
         "imagenes":[
-            "img/vdlcT.jpg",
-            "img/vdlcc1.jpg",
-            "img/vdlcc2.jpg"
+            "/carmen/images/vdlcT.jpg",
+            "/carmen/images/vdlcc1.jpg",
+            "/carmen/images/vdlcc2.jpg"
         ]
     },
     {
@@ -63,9 +63,9 @@ let Sitios=[
             "Excelente plan para conocer la historia de la cerámica, recorridos guiados por personas idóneas,interesante actividad para realizar en cualquier ocasión."
         ],
         "imagenes":[
-            "img/mvdlcT.jfif",
-            "img/mvdlcc1.jpg",
-            "img/mvdlcc2.jpg"
+            "/carmen/images/mvdlcT.jfif",
+            "/carmen/images/mvdlcc1.jpg",
+            "/carmen/images/mvdlcc2.jpg"
         ]
     },
     {
@@ -80,9 +80,9 @@ let Sitios=[
             "iglesia central Nuestra Señora del Carmen, no sólo para entregar una devota oración, también para admirar la arquitectura y los colores de los vitrales de este templo religioso."
         ],
         "imagenes":[
-            "img/cdlcT.jpeg",
-            "img/cdlcuc1.jpg",
-            "img/cdlcuc2.jpg"
+            "/carmen/images/cdlcT.jpeg",
+            "/carmen/images/cdlcuc1.jpg",
+            "/carmen/images/cdlcuc2.jpg"
         ]
     },
     {
@@ -97,9 +97,9 @@ let Sitios=[
             "ste lugar cargado de historia es realmente mágico."
         ],
         "imagenes":[
-            "img/ljt.jpeg",
-            "img/ljc1.jfif",
-            "img/ljc2.jpg"
+            "/carmen/images/ljt.jpeg",
+            "/carmen/images/ljc1.jfif",
+            "/carmen/images/ljc2.jpg"
         ]
     },
     {
@@ -113,9 +113,9 @@ let Sitios=[
             "Los fieles que celebran la Semana Santa consideran esta actividad como un acto de penitencia, debido a la inclinación y nivel de dificultad de subida al Cerro."
         ],
         "imagenes":[
-            "img/ecbt.jpeg",
-            "img/ecbc1.jpeg",
-            "img/ecbc2.jpg"
+            "/carmen/images/ecbt.jpeg",
+            "/carmen/images/ecbc1.jpeg",
+            "/carmen/images/ecbc2.jpg"
         ]
     }
 

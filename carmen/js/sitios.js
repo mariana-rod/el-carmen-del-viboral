@@ -70,7 +70,7 @@ let Sitios=[
     },
     {
         "titulo":"La Casa de la Cultura Sixto Arango",
-        "descripcion":"es un espacio para el encuentro, la creación, la gestión artística y cultural, para la realización de talleres de formación y hasta para plenarias del Concejo. Esta casa es símbolo de arte, cultura y democracia dentro de la tradición carmelita.",
+        "descripcion":"Es un espacio para el encuentro, la creación, la gestión artística y cultural, para la realización de talleres de formación y hasta para plenarias del Concejo. Esta casa es símbolo de arte, cultura y democracia dentro de la tradición carmelita.",
         "tipo":"Monumentos y lugares de interés",
         "calificacion":5,
         "lugar":"Cra. 34a #33-80 El Carmen de Viboral, Antioquia",
@@ -120,7 +120,7 @@ let Sitios=[
     },
     {
         "titulo":"El Rio Melcocho",
-        "descripcion":"nace en la vereda El Porvenir, municipio de El Carmen de Víboral, luego pasa por la vereda La Cristalina (El Carmen de Víboral), después recorre varias veredas del municipio de Cocorná se une a el Rio Santo Domingo, en el sitio conocido como Los Encuentros, allí continúa su recorrido, se une a El Samaná y de esta manera llega a el río Magdalena.",
+        "descripcion":"Nace en la vereda El Porvenir, municipio de El Carmen de Víboral, luego pasa por la vereda La Cristalina (El Carmen de Víboral), después recorre varias veredas del municipio de Cocorná se une a el Rio Santo Domingo, en el sitio conocido como Los Encuentros, allí continúa su recorrido, se une a El Samaná y de esta manera llega a el río Magdalena.",
         "tipo":"Tours naturaleza",
         "calificacion":5,
         "lugar":"vereda El Porvenir Municipio del Carmen de Viboral, Antioquia",

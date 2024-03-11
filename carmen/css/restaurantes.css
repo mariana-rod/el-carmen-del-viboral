@@ -107,7 +107,7 @@ header li a:hover:not(.active) {
   .btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #A45C44; /* Café */
+    background-color: #A45C44; /* café */
     color: #FFF;
     text-decoration: none;
     border-radius: 5px;
@@ -115,7 +115,7 @@ header li a:hover:not(.active) {
   }
   
   .btn:hover {
-    background-color: #FBE373; /* Amarillo */
+    background-color: #333; /* negrito */
   }
   
   

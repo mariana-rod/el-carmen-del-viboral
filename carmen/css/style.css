@@ -170,7 +170,7 @@ h1, h4, p
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ddb2a6;
+  background-color: #be9286;
   color: #333;
   text-align: center;
   font-family: 'Libre Baskerville', serif;
@@ -222,7 +222,6 @@ h1, h4, p
 .social-logo img {
   width: 30px;
   height: auto;
- 
 }
 
 @media (max-width: 767px) {

@@ -72,13 +72,22 @@ header li a:hover:not(.active) {
   {
     background-color: #cca69b;
   }
+  .centrado {
+    text-align: center;
+
+}
+
   .card {
     width: 300px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
     background-color: #96B19B;
+  }
+  .card:hover {
+    transform: scale(1.05); 
   }
   
   .card-image {
@@ -86,7 +95,15 @@ header li a:hover:not(.active) {
     height: 200px;
     object-fit: cover;
   }
-  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+  }
+  .card-image:hover img {
+    transform: scale(1.2); 
+  }
   .card-content {
     padding: 20px;
   }

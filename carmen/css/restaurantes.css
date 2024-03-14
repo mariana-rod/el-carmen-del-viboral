@@ -78,8 +78,13 @@ header li a:hover:not(.active) {
     background-color: #cca69b;
   }
   .centrado {
-    text-align: center;
+    text-align: left;
+    padding: 6%;
 
+}
+.adicional
+{
+  padding: 6%;
 }
 
   .card {
@@ -146,7 +151,7 @@ header li a:hover:not(.active) {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ddb2a6;
+  background-color: #be9286;
   color: #333;
   text-align: center;
   font-family: 'Libre Baskerville', serif;

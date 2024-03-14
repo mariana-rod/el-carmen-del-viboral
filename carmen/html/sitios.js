@@ -138,9 +138,32 @@ let Sitios=[
 ];
 
 
-const contenedor = document.querySelector('.container');
+const contenedor = document.querySelector('.lista');
+const carrusel = document.querySelector('.swiper-wrapper');
 
 Sitios.forEach((sitio, indice) => {
+
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide');
+
+    const targeta = document.createElement('div');
+    targeta.classList.add('tarjeta');
+    targeta.style.backgroundImage =`url(${sitio.imagenes[1]})`;
+
+    const contenido = document.createElement('div');
+    contenido.classList.add('contenido');
+    contenido.innerHTML =` <h2>${sitio.titulo}</h2><p>${sitio.descripcion}</p>`;
+
+    targeta.appendChild(contenido);
+    slide.appendChild(targeta);
+    
+    carrusel.appendChild(slide);    
+
+});
+
+// Recorre el array Sitios
+Sitios.forEach((sitio, indice) => {
+    // Crea los elementos HTML dinámicamente
     const divRow = document.createElement('div');
     divRow.classList.add('row', 'fila');
 
@@ -173,13 +196,20 @@ Sitios.forEach((sitio, indice) => {
     divCol3.appendChild(divwraper);
     
 
+    // Agrega las columnas al divRow
     divRow.appendChild(divCol1);
     divRow.appendChild(divCol2);
     divRow.appendChild(divCol3);
 
+    // Agrega el divRow al contenedor principal
+    
     contenedor.appendChild(divRow);
+    
+    // Suponiendo que tienes un botón o evento que abre el modal, puedes agregar un evento de clic a esos elementos
 
 });
+
+
 
 
 const modalContenedor = document.getElementById('modalInfo');
@@ -194,6 +224,7 @@ const card2 = document.getElementById('back');
 
 
 
+// Función para cargar la información del sitio en el modal
 function cargarInformacionModal(sitio) {
   modalTitulo.textContent = sitio.titulo;
   modalDescripcion.textContent = sitio.descripcion;
@@ -206,8 +237,10 @@ function cargarInformacionModal(sitio) {
   imgcard2.src = sitio.imagenes[2];
   card1.appendChild(imgcard1);
   card2.appendChild(imgcard2);
+  // Limpiar contenido anterior de calificación
   modalCalificacion.innerHTML = '';
   
+  // Agregar estrellas de calificación al modal
   for (let i = 0; i < sitio.calificacion; i++) {
     const starSpan = document.createElement('span');
     starSpan.classList.add('star');
@@ -215,14 +248,26 @@ function cargarInformacionModal(sitio) {
     modalCalificacion.appendChild(starSpan);
   }
 
+  // Limpiar contenido anterior de planes
   modalPlanes.innerHTML = '';
   
+  // Agregar planes al modal
   sitio.planes.forEach(plan => {
     const listItem = document.createElement('li');
     listItem.textContent = plan;
     modalPlanes.appendChild(listItem);
   });
 
+  // Mostrar el modal
   const myModal = new bootstrap.Modal(modalContenedor);
   myModal.fade();
 }
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

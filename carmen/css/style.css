@@ -182,7 +182,7 @@ h1, h4, h3, h2, p
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #be9286;
+  background-color: #cca69b;
   color: #333;
   text-align: center;
   font-family: 'Libre Baskerville', serif;
@@ -210,12 +210,11 @@ h1, h4, h3, h2, p
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ddb2a6;
+  background-color: #be9286;
   color: #333;
   text-align: center;
   font-family: 'Libre Baskerville', serif;
   font-size: 14px;
-  color: #555;
   line-height: 1.6;
   text-align: center;
   padding: 20px;
@@ -256,9 +255,6 @@ h1, h4, h3, h2, p
   margin: 0;
   padding: 0;
 }
-
-
-
 .social-logo img {
   width: 30px;
   height: auto;

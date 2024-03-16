@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/carmen/css/restaurantes.css">
     <link rel="shortcut icon" href="/carmen/images/favicon.png" type="image/x-icon">
-    <title>Restaurantes</title>
+    <title>Gastronomía</title>
 </head>
 <body>
   <header>
@@ -19,40 +19,36 @@
         <li><a href="sitios.html">Explorar</a></li>
       </ul>
 </header>
+<main style="margin-left:25%;padding:1px 16px;height:1000px;">
 <div class="carousel-text">
-<h1>Restaurantes del carmen de viboral</h1>
+<h1>Descubre joyas escondidas...</h1>
 </div>
 <div class="carousel">
   <div class="carousel-slide">
     <img src="/carmen/images/Carrataplan.jpg" alt="Imagen 1">
   </div>
   <div class="carousel-slide">
-    <img src="/carmen/images/pizza-de-jamon.jpg" alt="Imagen 2">
+    <img src="/carmen/images/pizza-de-jamon.png" alt="Imagen 2">
   </div>
   <div class="carousel-slide">
-    <img src="/carmen/images/costillas.jpg" alt="Imagen 3">
+    <img src="/carmen/images/costillas.png" alt="Imagen 3">
   </div> 
   <div class="carousel-slide">
-    <img src="/carmen/images/langostinos.jpg" alt="Imagen 4">
+    <img src="/carmen/images/langostinos.png" alt="Imagen 4">
   </div> 
   <div class="carousel-slide">
-    <img src="/carmen/images/brangus-burger.jpg" alt="Imagen 4">
+    <img src="/carmen/images/brangus-burger.png" alt="Imagen 4">
   </div> 
   <button id="prevBtn" onclick="prevSlide()">Anterior</button>
   <button id="nextBtn" onclick="nextSlide()">Siguiente</button>
 </div>
-<div class="carousel-text">
-  <h1>Gastronomía el carmen de viboral </h1>
- <p >Todos los pueblos tienen un ingrediente o plato típico del lugar,</p> 
-  <p >en el caso del Carmen de Viboral es la manzanilla con limón o manzanilla con leche. </p>
-  <p>Y hablando de gastronomía, aquí la comida no para, </p>
-<p>pues llegado el momento del almuerzo esta vez le daremos el turno a la comida mexicana</p>
-<p>en Casa La Vicenta. Les damos una recomendación, no se queden sin probar</p>
-<p>el bowl mexicano y el aguacate tasco, dos delicias de la cocina mexicana. </p>
+<div class="carousel-text" id="texto" class="libre-baskerville-regular">
+  <h1>Gastronomía de El Carmen de Viboral</h1>
+  <p class="libre-baskerville-regular">
+    En cada rincón del mundo, los sabores locales se convierten en símbolos de identidad. En el encantador Carmen de Viboral, la manzanilla con limón o la manzanilla con leche son verdaderas joyas gastronómicas. Sin embargo, la diversidad gastronómica es la norma y esta se convierte en la oportunidad perfecta para deleitarse con los diferentes sabores del pueblo. 
+  </p>
 </div>
-
-
-    <div class="container" style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <div class="container">
         <div class="card">
           <img src="/carmen/images/la-carmela.jpg" alt="Restaurant 1" class="card-image">
           <div class="card-content">
@@ -65,10 +61,10 @@
             <p class="card-details">Horario: 11:30am - 10:30pm</p>
             <p class="card-details">
                 <h3>Ubicación</h3>cra.30 #31-79</p>
-            <a href="#" id="reservar1" class="btn" onclick="reservarRestaurante('La carmela Restaurante')">Reservar</a>
+            <a href="#" id="reservar1" class="btn" onclick="reservarRestaurante('La Carmela Restaurante')">Reservar</a>
           </div>
-      </div>
-      <div class="card">
+        </div>
+        <div class="card">
           <img src="/carmen/images/delicioso-sterling.jpg" alt="Restaurant 2" class="card-image">
           <div class="card-content">
             <h2 class="card-title">Tezenda Restaurante</h2>
@@ -83,8 +79,8 @@
                 TEZENDA Restaurante, Mall Tezenda, km 6.8, La Ceja-Río Negro, El Carmen de Viboral, Antioquia</p>
                 <a href="#" id="reservar2" class="btn" onclick="reservarRestaurante('Tezenda Restaurante')">Reservar</a>
           </div>
-      </div>
-      <div class="card">
+        </div>
+        <div class="card">
             <img src="/carmen/images/un-restaurante-tradicional.jpg" alt="Restaurant 3" class="card-image">
             <div class="card-content">
               <h2 class="card-title">La Frisolera</h2>
@@ -96,10 +92,10 @@
               <p class="card-details">Horario: 9:00am - 11:00pm</p>
               <h3>Ubicación</h3>
                 Mall Tezenda, segundo piso. El carmen de viboral, Antioquia.</p>
-                <a href="#" id="reservar3" class="btn"onclick="reservarRestaurante('la Frisolera')">Reservar</a>
+                <a href="#" id="reservar3" class="btn"onclick="reservarRestaurante('La Frisolera')">Reservar</a>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <img src="/carmen/images/restaurant-interior.jpg" alt="Restaurant 4" class="card-image">
             <div class="card-content">
               <h2 class="card-title">Vino al Arte Restaurante</h2>
@@ -113,8 +109,8 @@
               <p class="card-details">Calzado Cosmos El Carmen, Cl. 30 #32 - 02, El Carmen de Viboral, Antioquia.</p>
               <a href="#" id="reservar4" class="btn"onclick="reservarRestaurante('Vino al Arte Restaurante')">Reservar</a>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <img src="/carmen/images/club-house-perfecto-para.jpg" alt="Restaurant 4" class="card-image">
             <div class="card-content">
               <h2 class="card-title"> La Mordida Comida Urbana</h2>
@@ -128,8 +124,8 @@
               <p class="card-details">El Carmen de Viboral, #21-32. Frente a la plaza principal</p>
               <a href="#" id="reservar5" class="btn"onclick="reservarRestaurante('La Mordida Comida Urbana')">Reservar</a>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card">
             <img src="/carmen/images/photo3jpg.jpg" alt="Restaurant 4" class="card-image">
             <div class="card-content">
               <h2 class="card-title">Toritto's Parrilla Bar Merece cada estrella</h2>
@@ -145,25 +141,24 @@
             </div>
           </div>
           <h1>¡Anímate a venir al Carmen!</h1>
-<br><br>
-          <br><br><p>Los platos típicos de la población del carmen  son las arepas de chócolo y los quesos, además de dulces y otros platos antioqueños como la bandeja paisa.</p>
+          <h2>Prueba comidas típicas de varias regiones del mundo</h2>
           <img src="/carmen/images/CAZUELA.png" alt="">
           <ul>
             <li>Restaurante Carmeños, encuéntralos en redes @carmenos.co - 300 8629386</li>
            <li> Restaurante La Carmela, encuéntralos en redes @lacarmela_restaurante - 3009075197</li>
             <li>Cafetería Especial, encuéntralos en redes @cafeteria_especial o en Calle de la cerámica (CRA 31 # 28-29 y 28-31)</li>
-            <li>La Casa de Vero, encuéntralos en redes @lacasadvero - 3122674797</li>
+           <li> La Casa de Vero, encuéntralos en redes @lacasadvero - 3122674797</li>
             <li>Salón Clarita, encuéntralos en redes @claritaelcarmen - 3148413880</li>
-            <li>A Fuego Lento, encuéntralos en redes @restaurante_a_fuego_lento - 3226779629</li>
-            <li>Moga Manjares, encuéntralos en redes @mogamanjares - 3054807450</li> 
+           <li> A Fuego Lento, encuéntralos en redes @restaurante_a_fuego_lento - 3226779629</li>
+           <li>Moga Manjares, encuéntralos en redes @mogamanjares - 3054807450</li> 
             <li>Salpicón el Maná, encuéntralos en redes @elmanacomacaidodelcielo - 3042499368</li>
             <li>La Itinerante, encuéntralos en redes @cocina_laitinerante - 3167069042</li>
-            <li> Hojarasca, contáctalos 3104329534</li>
+           <li> Hojarasca, contáctalos 3104329534</li>
             <li>La Frisolera, encuéntralos en redes @lafrisolera - 3234195486</li>
             <li>Don Alfonso, encuéntralos en redes @restaurante_don_alfonso - 3148758888</li>
             <li>Carmelina, encuéntralos en redes @carmelinaculturayparrilla - 3116400503</li>
-            <li> Volaren Café Cultural, encuéntralos en redes @volarencafecultural - 3017246396</li>
-          </ul>
+           <li> Volaren Café Cultural, encuéntralos en redes @volarencafecultural - 3017246396</li>
+           </ul>
           <div class="footer">
             <hr>
             <div class="footer-content">
@@ -178,6 +173,7 @@
             </div>
         </div>
       </div>
+    </main>
       <script src="/carmen/js/restaurante.js"></script>
 </body>
 </html>

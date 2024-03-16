@@ -259,9 +259,22 @@ function cargarInformacionModal(sitio) {
 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
-    spaceBetween: 30,
+    loop:true,
+    spaceBetween: 10,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000, 
+    }, effect: 'coverflow',
+    coverflowEffect: {
+        rotate: -30, // Ángulo de rotación de las diapositivas
+        depth: 10, // Profundidad de la perspectiva
+        modifier: 1, // Factor de zoom de las diapositivas
+        slideShadows : true, // Muestra sombras para las diapositivas
     },
   });

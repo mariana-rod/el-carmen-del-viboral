@@ -344,11 +344,12 @@ h1, h4, p
   text-align: justify;
 }
 /*-------Carrusel----------*/
-.carrusel
-{
-  width: 100%;
-  overflow: hidden;
-  position: relative; 
+.carrusel {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
 }
 .swiper-container {
     width: 100%;

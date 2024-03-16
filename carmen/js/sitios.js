@@ -138,7 +138,33 @@ let Sitios=[
 ];
 
 
-const contenedor = document.querySelector('.container');
+const contenedor = document.querySelector('.lista');
+const carrusel = document.querySelector('.swiper-wrapper');
+
+Sitios.forEach((sitio, indice) => {
+
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide');
+
+    const targeta = document.createElement('div');
+    targeta.classList.add('tarjeta');
+    targeta.style.backgroundImage =`url(${sitio.imagenes[1]})`;
+
+    const contenido = document.createElement('div');
+    contenido.classList.add('contenido');
+    slide.dataset.bsToggle = 'modal';
+    slide.dataset.bsTarget = '#modalInfo';
+    slide.addEventListener('click', (event) => {
+        cargarInformacionModal(Sitios[indice]);
+    });
+    contenido.innerHTML =` <h2>${sitio.titulo}</h2><p>${sitio.descripcion}</p>`;
+    
+    targeta.appendChild(contenido);
+    slide.appendChild(targeta);
+    
+    carrusel.appendChild(slide);    
+
+});
 
 Sitios.forEach((sitio, indice) => {
     const divRow = document.createElement('div');
@@ -177,9 +203,13 @@ Sitios.forEach((sitio, indice) => {
     divRow.appendChild(divCol2);
     divRow.appendChild(divCol3);
 
+    
     contenedor.appendChild(divRow);
+    
 
 });
+
+
 
 
 const modalContenedor = document.getElementById('modalInfo');
@@ -226,3 +256,25 @@ function cargarInformacionModal(sitio) {
   const myModal = new bootstrap.Modal(modalContenedor);
   myModal.fade();
 }
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    loop:true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000, 
+    }, effect: 'coverflow',
+    coverflowEffect: {
+        rotate: -30, // Ángulo de rotación de las diapositivas
+        depth: 10, // Profundidad de la perspectiva
+        modifier: 1, // Factor de zoom de las diapositivas
+        slideShadows : true, // Muestra sombras para las diapositivas
+    },
+  });

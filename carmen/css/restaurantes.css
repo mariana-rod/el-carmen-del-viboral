@@ -90,7 +90,9 @@ header li a:hover:not(.active) {
   position: relative;
   max-width: 600px; /* Ajusta el ancho del carrusel según tus necesidades */
   margin: 0 auto;
+  margin-top: 50px;
   overflow: hidden;
+  
 }
 
 .carousel-slide {
@@ -123,11 +125,14 @@ button {
 .carousel-text {
   text-align: center;
   margin-top: 20px;
+  margin-left:25%;
+
 }
 
 .carousel-text h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  
 }
 
 .carousel-text p {

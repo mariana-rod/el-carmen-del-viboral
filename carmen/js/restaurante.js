@@ -28,14 +28,14 @@ function prevSlide() {
 // Mostrar la primera imagen al cargar la página
 showSlide(slideIndex);
 
-  
-  
-  
+
+
+
   function reservarRestaurante(nombreRestaurante) {
     alert("¡Reserva exitosa para el restaurante " + nombreRestaurante + "!");
   }
 
- 
+
   document.getElementById("reservar1").addEventListener("click", function() {
     reservarRestaurante(1);
   });
@@ -55,8 +55,3 @@ showSlide(slideIndex);
   document.getElementById("reservar6").addEventListener("click", function() {
     reservarRestaurante(6);
   });
-
-
-
- 
-

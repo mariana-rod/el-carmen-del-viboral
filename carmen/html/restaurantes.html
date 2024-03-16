@@ -19,6 +19,39 @@
         <li><a href="sitios.html">Explorar</a></li>
       </ul>
 </header>
+<div class="carousel-text">
+<h1>Restaurantes del carmen de viboral</h1>
+</div>
+<div class="carousel">
+  <div class="carousel-slide">
+    <img src="/carmen/images/Carrataplan.jpg" alt="Imagen 1">
+  </div>
+  <div class="carousel-slide">
+    <img src="/carmen/images/pizza-de-jamon.jpg" alt="Imagen 2">
+  </div>
+  <div class="carousel-slide">
+    <img src="/carmen/images/costillas.jpg" alt="Imagen 3">
+  </div> 
+  <div class="carousel-slide">
+    <img src="/carmen/images/langostinos.jpg" alt="Imagen 4">
+  </div> 
+  <div class="carousel-slide">
+    <img src="/carmen/images/brangus-burger.jpg" alt="Imagen 4">
+  </div> 
+  <button id="prevBtn" onclick="prevSlide()">Anterior</button>
+  <button id="nextBtn" onclick="nextSlide()">Siguiente</button>
+</div>
+<div class="carousel-text">
+  <h1>Gastronomía el carmen de viboral </h1>
+ <p >Todos los pueblos tienen un ingrediente o plato típico del lugar,</p> 
+  <p >en el caso del Carmen de Viboral es la manzanilla con limón o manzanilla con leche. </p>
+  <p>Y hablando de gastronomía, aquí la comida no para, </p>
+<p>pues llegado el momento del almuerzo esta vez le daremos el turno a la comida mexicana</p>
+<p>en Casa La Vicenta. Les damos una recomendación, no se queden sin probar</p>
+<p>el bowl mexicano y el aguacate tasco, dos delicias de la cocina mexicana. </p>
+</div>
+
+
     <div class="container" style="margin-left:25%;padding:1px 16px;height:1000px;">
         <div class="card">
           <img src="/carmen/images/la-carmela.jpg" alt="Restaurant 1" class="card-image">
@@ -32,7 +65,7 @@
             <p class="card-details">Horario: 11:30am - 10:30pm</p>
             <p class="card-details">
                 <h3>Ubicación</h3>cra.30 #31-79</p>
-            <a href="#" class="btn">Reservar</a>
+            <a href="#" id="reservar1" class="btn" onclick="reservarRestaurante('La carmela Restaurante')">Reservar</a>
           </div>
         </div>
         <div class="card">
@@ -48,7 +81,7 @@
             <p class="card-details">
                 <h3>Ubicación</h3>
                 TEZENDA Restaurante, Mall Tezenda, km 6.8, La Ceja-Río Negro, El Carmen de Viboral, Antioquia</p>
-            <a href="#" class="btn">Reservar</a>
+                <a href="#" id="reservar2" class="btn" onclick="reservarRestaurante('Tezenda Restaurante')">Reservar</a>
           </div>
         </div>
         <div class="card">
@@ -63,7 +96,7 @@
               <p class="card-details">Horario: 9:00am - 11:00pm</p>
               <h3>Ubicación</h3>
                 Mall Tezenda, segundo piso. El carmen de viboral, Antioquia.</p>
-              <a href="#" class="btn">Reservar</a>
+                <a href="#" id="reservar3" class="btn"onclick="reservarRestaurante('la Frisolera')">Reservar</a>
             </div>
           </div>
           <div class="card">
@@ -78,7 +111,7 @@
               <p class="card-details">Horario: 6:00pm - 1:00am</p>
               <h2>Ubicación</h2>
               <p class="card-details">Calzado Cosmos El Carmen, Cl. 30 #32 - 02, El Carmen de Viboral, Antioquia.</p>
-              <a href="#" class="btn">Reservar</a>
+              <a href="#" id="reservar4" class="btn"onclick="reservarRestaurante('Vino al Arte Restaurante')">Reservar</a>
             </div>
           </div>
           <div class="card">
@@ -93,7 +126,7 @@
                 <p class="card-details">Horario: 5:00pm - 9:30pm</p>
               <h2>Ubicación</h2>
               <p class="card-details">El Carmen de Viboral, #21-32. Frente a la plaza principal</p>
-              <a href="#" class="btn">Reservar</a>
+              <a href="#" id="reservar5" class="btn"onclick="reservarRestaurante('La Mordida Comida Urbana')">Reservar</a>
             </div>
           </div>
           <div class="card">
@@ -108,12 +141,13 @@
               <p class="card-details">Horario: 5:00pm - 11:30pm</p>
               <h2>Ubicación</h2>
               <p class="card-details">Hincapie Idarraga Estudio, 0.2 Km Via, Don Diego, El Carmen de Viboral, Antioquia</p>
-              <a href="#" class="btn">Reservar</a>
+              <a href="#" id="reservar6" class="btn"onclick="reservarRestaurante('Torittos Parrilla Bar Merece cada estrella')">Reservar</a>
             </div>
           </div>
           <h1>Animate a venir al carmen!!</h1>
           <h1>Comidas Tipicas del carmen de Viboral</h1>
-          <h2>Típicos de la población son las arepas de chócolo y los quesos, además de dulces y otros platos antioqueños como la bandeja paisa.</h2>
+<br><br>
+          <br><br><p>Los platos Típicos de la población del carmen  son las arepas de chócolo y los quesos, además de dulces y otros platos antioqueños como la bandeja paisa.</p>
           <img src="/carmen/images/CAZUELA.png" alt="">
           <ul>
             <li>Restaurante Carmeños, encuéntralos en redes @carmenos.co - 300 8629386</li>
@@ -145,5 +179,6 @@
             </div>
         </div>
       </div>
+      <script src="/carmen/js/restaurante.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ let Sitios=[
         "planes":[
             "Un rincón magico en el Carmen de Viboral.",
             "Un lugar lleno de color, diseño, arte, comercio, gastrobar.",
-            "ideal para una buena fotografía que recuerde la visita."
+            "Ideal para una buena fotografía que recuerde la visita."
         ],
         "imagenes":[
             "/carmen/images/pdaT.jpg",
@@ -59,7 +59,7 @@ let Sitios=[
         "lugar":"Carrera 31 # 36, Carmen de Viboral ",
         "planes":[
             "conocer nuestra fábrica.",
-            "vivir la experiencia de ver cómo nuestros artesanos fabrican y decoran con cada trazo, amor y dedicación cada pieza.",
+            "Vivir la experiencia de ver cómo nuestros artesanos fabrican y decoran con cada trazo, amor y dedicación cada pieza.",
             "Excelente plan para conocer la historia de la cerámica, recorridos guiados por personas idóneas,interesante actividad para realizar en cualquier ocasión."
         ],
         "imagenes":[
@@ -75,9 +75,9 @@ let Sitios=[
         "calificacion":5,
         "lugar":"Cra. 34a #33-80 El Carmen de Viboral, Antioquia",
         "planes":[
-            "recorrer sus salas de exposiciones arqueológicas.",
-            "salas temporales impregnadas en arte.",
-            "iglesia central Nuestra Señora del Carmen, no sólo para entregar una devota oración, también para admirar la arquitectura y los colores de los vitrales de este templo religioso."
+            "Recorrer sus salas de exposiciones arqueológicas.",
+            "Salas temporales impregnadas en arte.",
+            "Iglesia central Nuestra Señora del Carmen, no sólo para entregar una devota oración, también para admirar la arquitectura y los colores de los vitrales de este templo religioso."
         ],
         "imagenes":[
             "/carmen/images/cdlcT.jpeg",
@@ -126,7 +126,7 @@ let Sitios=[
         "lugar":"vereda El Porvenir Municipio del Carmen de Viboral, Antioquia",
         "planes":[
             "Tiene bosques que se ubican a sus alrededores Al interior de estos senderos se encuentra una variedad de flora y fauna, ideales para realizar caminatas y disfrutar del delicioso aroma de las plantas.",
-            "lugar perfecto para conectarse con la naturaleza y relajarse explorando la zona, la cual posee una riqueza hídrica y natural sorprendente."
+            "Lugar perfecto para conectarse con la naturaleza y relajarse explorando la zona, la cual posee una riqueza hídrica y natural sorprendente."
         ],
         "imagenes":[
             "/carmen/images/rmT.jpg",

@@ -280,3 +280,17 @@ main {
       margin-top: 20px;
   }
 }
+
+/*Styles del video*/
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video-frame {
+  border: 5px solid #8B4513; /* Color del marco */
+  border-radius: 5px;
+  overflow: hidden;
+}

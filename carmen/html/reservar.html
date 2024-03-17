@@ -6,10 +6,128 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/carmen/css/restaurantes.css">
     <link rel="shortcut icon" href="/carmen/images/favicon.png" type="image/x-icon">
-    <title>reservar</title>
+    <title>Reservar</title>
 </head>
+<style>
+  header ul
+{
+  list-style-type: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f2eee5;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+header li a
+{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+header li a:hover
+{
+  background-color: #a45c44;
+  color: white;
+}
+header li a.active {
+  background-color: #96b19b;
+  color: white;
+}
+header li a:hover:not(.active) {
+  background-color: #a45c44;
+  color: white;
+}
+/*font*/
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+body
+{
+  background-color: #cca69b;
+  font-family: "Libre Baskerville", serif;
+}
+
+/*----------form----------*/
+
+main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        
+        .reserva-form-container {
+            width: 700px;
+            height: auto;
+            padding: 6%;
+            margin: 10px;
+            background-color: #f2eee5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+            margin: 10px;
+        }
+
+        .reserva-form-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .reserva-form-group {
+            margin-bottom: 20px;
+        }
+
+        .reserva-form-label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .reserva-form-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .reserva-form-submit-btn {
+            width: 40%;
+            padding: 8px;
+            margin-left: 30%;
+            font-size: 14px;
+            border: #a45c44;
+            background-color: #a45c44;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .reserva-form-submit-btn:hover {
+            background-color: #333;
+            color: #f2eee5;
+        }
+</style>
 <body>
     <header>
         <ul class="libre-baskerville-regular">
@@ -17,34 +135,47 @@
             <li><a href="cultura.html">Cultura</a></li>
             <li><a href="restaurantes.html" class="active">Gastronomía</a></li>
             <li><a href="sitios.html">Explorar</a></li>
-          </ul>
+        </ul>
     </header>
-    <div class="reserva-form-container">
-        <h2 class="reserva-form-title">Realizar reserva</h2>
-        <form id="reservaForm">
-          <div class="reserva-form-group">
-            <label for="nombreRestaurante" class="reserva-form-label">Nombre del restaurante:</label>
-            <input type="text" id="nombreRestaurante" name="nombreRestaurante" class="reserva-form-input">
-          </div>
-      
-          <div class="reserva-form-group">
-            <label for="fecha" class="reserva-form-label">Fecha:</label>
-            <input type="date" id="fecha" name="fecha" class="reserva-form-input">
-          </div>
-      
-          <div class="reserva-form-group">
-            <label for="hora" class="reserva-form-label">Hora:</label>
-            <input type="time" id="hora" name="hora" class="reserva-form-input">
-          </div>
-      
-          <div class="reserva-form-group">
-            <label for="cantidadPersonas" class="reserva-form-label">Cantidad de personas:</label>
-            <input type="number" id="cantidadPersonas" name="cantidadPersonas" min="1" class="reserva-form-input">
-          </div>
-      
-          <button type="submit" class="reserva-form-submit-btn">Reservar</button>
-        </form>
-      </div>
+    <main style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <div class="reserva-form-container" style="margin-top: 50px;">
+            <h2 class="reserva-form-title">Realizar reserva</h2>
+            <form id="reservaForm">
+                <div class="reserva-form-group">
+                    <label for="nombreRestaurante" class="reserva-form-label">Nombre del restaurante:</label>
+                    <select id="nombreRestaurante" name="nombreRestaurante" class="reserva-form-input">
+                      <option value="">Seleccionar restaurante</option>
+                      <option value="La Carmela Restaurante">La Carmela Restaurante</option>
+                      <option value="Tezenda Restaurante">Tezenda Restaurante</option>
+                      <option value="La Frisolera">La Frisolera</option>
+                      <option value="Vino al Arte Restaurante">Vino al Arte Restaurante</option>
+                      <option value="La Mordida Comida Urbana">La Mordida Comida Urbana</option>
+                      <option value="Toritto's Parrilla Bar">Toritto's Parrilla Bar</option>
+                      <!-- Agrega más opciones según los restaurantes disponibles -->
+                  </select>
+                </div>
+                <div class="reserva-form-group">
+                  <label for="nombre" class="reserva-form-label">Nombre de quien reserva:</label>
+                  <input type="text" id="nombre" name="nombre" class="reserva-form-input">
+                </div>
+                <div class="reserva-form-group">
+                    <label for="fecha" class="reserva-form-label">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" class="reserva-form-input">
+                </div>
+                <div class="reserva-form-group">
+                    <label for="hora" class="reserva-form-label">Hora:</label>
+                    <input type="time" id="hora" name="hora" class="reserva-form-input">
+                </div>
+                <div class="reserva-form-group">
+                    <label for="cantidadPersonas" class="reserva-form-label">Cantidad de personas:</label>
+                    <input type="number" id="cantidadPersonas" name="cantidadPersonas" min="1" class="reserva-form-input">
+                </div>
+                <div class="">
+                    <button type="submit" class="reserva-form-submit-btn">Reservar</button>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 <script>
     function reservarRestaurante(nombreRestaurante, fecha, hora, cantidadPersonas) {
@@ -74,7 +205,6 @@
           document.getElementById('submit-btn').click();
         });
       });
-      
       
 </script>
 </html>

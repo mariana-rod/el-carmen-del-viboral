@@ -28,30 +28,4 @@ function prevSlide() {
 // Mostrar la primera imagen al cargar la página
 showSlide(slideIndex);
 
-
-
-
-  function reservarRestaurante(nombreRestaurante) {
-    alert("¡Reserva exitosa para el restaurante " + nombreRestaurante + "!");
-  }
-
-
-  document.getElementById("reservar1").addEventListener("click", function() {
-    reservarRestaurante(1);
-  });
-
-  document.getElementById("reservar2").addEventListener("click", function() {
-    reservarRestaurante(2);
-  });
-  document.getElementById("reservar3").addEventListener("click", function() {
-    reservarRestaurante(3);
-  });
-  document.getElementById("reservar4").addEventListener("click", function() {
-    reservarRestaurante(4);
-  });
-  document.getElementById("reservar5").addEventListener("click", function() {
-    reservarRestaurante(5);
-  });
-  document.getElementById("reservar6").addEventListener("click", function() {
-    reservarRestaurante(6);
-  });
+  

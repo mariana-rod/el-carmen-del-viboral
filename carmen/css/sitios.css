@@ -1,0 +1,484 @@
+header ul
+{
+  list-style-type: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f2eee5;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+header li a
+{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+header li a:hover
+{
+  background-color: #a45c44;
+  color: white;
+}
+header li a.active {
+  background-color: #96b19b;
+  color: white;
+}
+header li a:hover:not(.active) {
+  background-color: #a45c44;
+  color: white;
+}
+/*-------------------------------------*/
+body
+{
+  background-color: #cca69b;
+}
+.intro
+{
+  padding: 6%;
+}
+.intro h1
+{
+  text-align: center;
+}
+.recomendaciones
+{
+  padding: 6%;
+}
+/*---------------texto: centrado y fuente ---------------*/
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h1, h4, p
+{
+  text-align: left;
+}
+.recomendaciones p
+{
+  font-size: 18px;
+}
+.recomendaciones h4
+{
+  font-size: 20px;
+}
+/*-------------botón----------------*/
+.wrapper
+{
+  
+  position: absolute;
+  border-radius: 10px;
+  background-color: #a45c44;
+  bottom: 20px;
+  right: 15px;
+  
+}
+.wrapper a
+{
+  display: inline-block;
+  border-radius: 2px;
+  align-self: right;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+.wrapper a span
+{
+  position: relative;
+  z-index: 2;
+}
+.wrapper a:after
+{
+  position: absolute;
+  border-radius: 10px;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #333;
+  transition: all .35s;
+}
+.wrapper a:hover{
+  color: #fff;
+}
+.wrapper a:hover:after{
+  width: 100%;
+}
+/*----cards------------------------*/
+.container
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: static;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.box
+{
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+.box > img
+{
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+.box > span
+{
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+.box:hover
+{
+  flex: 1 1 50%;
+}
+.box:hover > img
+{
+  width: 100%;
+  height: 100%;
+}
+.fila {
+  display: flex;
+  position: relative;
+  background-color: #f2eee56d; 
+  width: auto;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.37);
+  margin: 20px; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+.fila:hover
+ {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 255px;
+  overflow: hidden;
+  background-color: #f2eee56d; 
+  box-shadow: 0 10px 10px #96b19b;
+  margin: 20px; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+.fila p img {
+  box-shadow: 0 5px 10px black;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0; 
+}
+.fila p
+{
+  text-align: justify;
+  position: relative;
+  float: left;
+}
+.fila div h3
+{
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 25px;
+}
+.modal-fondo
+{
+  background-color: rgba(204,166,155,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modal-contenido
+{
+  background-color: #f2eee5;
+  display: table-cell;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 90%;
+  max-height: 80%;
+  overflow: auto;
+  margin: 10px;
+}
+/*--------------cards-------------*/
+.card {
+  position: relative;
+  width: 100%;
+  height: 300PX;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: .5s;
+}
+.card .front {
+  box-shadow: 0 5px 10px black;
+  transform: perspective(800px) rotateY(0);
+}
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card .back {
+  display: flex;
+  box-shadow: 0 5px 10px black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: .5s;
+  transform: perspective(800px) rotateY(180deg);
+}
+.card .back img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card:hover .front {
+  transform: perspective(800px) rotateY(180deg);
+}
+.card:hover .back {
+  transform: perspective(800px) rotateY(360deg);
+}
+.stars {
+  display: flex;
+  color: #FFD700; 
+}
+.stars .star {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.stars .star:hover,
+.stars .star.active {
+  color: #FFD700; 
+}
+.descripcion
+{
+  max-height: none;
+  overflow: visible;
+  text-align: justify;
+}
+/*-------Carrusel----------*/
+.carrusel {
+  background-color: #cca69b ;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  padding: 5%;
+  padding-bottom: 10%;
+}
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
+.swiper-slide:hover
+{
+box-shadow: 0 10px 10px rgba(234, 242, 234, 0.844);
+}
+
+.tarjeta {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contenido {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.tarjeta:hover .contenido {
+  opacity: 1; 
+  transform: scale(1.05); 
+}
+
+.tarjeta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 16px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 100; 
+color: rgb(228, 200, 200); 
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+cursor: pointer;
+}
+.swiper-button-next {
+right: 10px; 
+}
+.swiper-button-prev {
+left: 10px; 
+}
+.titulo-contenedor {
+  background-color: rgb(0, 0, 0, 0.2); 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+  position: relative; 
+  margin: 20px 0px;
+}
+.titulo-contenedor h1 {
+  color: black; 
+  font-size: 36px; 
+  font-weight: bold; 
+  margin: 0; 
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+/*----------footer--------*/
+.footer
+{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #cca69b;
+  color: #333;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p
+{
+  font-size: 13px;
+  font-family: 'Libre Baskerville', serif;
+}
+.creditos
+{
+  text-align: center;
+  padding-bottom: 2%;
+}
+.footer
+{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #be9286;
+  color: #333;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p
+{
+  font-size: 13px;
+  font-family: 'Libre Baskerville', serif;
+}
+.creditos
+{
+  text-align: center;
+  padding-bottom: 2%;
+}
+/*---------Diseños del footer---------*/
+.footer-content {
+  flex-grow: 1;
+}
+.footer-content a
+{
+  text-decoration: none;
+}
+.social-logo {
+  margin-left: -10px;
+}
+.footer-content {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.social-logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.social-logo img {
+  width: 30px;
+  height: auto;
+  
+}
+
+@media (max-width: 767px) {
+  .footer {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .social-logo {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+}

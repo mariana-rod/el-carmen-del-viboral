@@ -34,6 +34,7 @@ header li a:hover:not(.active) {
 body
 {
   background-color: #cca69b;
+  scroll-behavior: smooth;
 }
 body, html {
   margin: 0;
@@ -181,39 +182,103 @@ h1, h4, h3, h2, p
 {
   width: 800px;
 }
-/*----------footer--------*/
-.footer
-{
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #cca69b;
-  color: #333;
-  text-align: center;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
-  text-align: center;
-  padding: 20px;
+/*--------------showcase------*/
+.showcase-area {
+  height: 53vh;
+  background: url(/carmen/images/calendario.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity:-10px;
+}
+
+.showcase-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
 }
-.footer p
-{
-  font-size: 13px;
-  font-family: 'Libre Baskerville', serif;
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
 }
-.creditos
+/*boton*/
+.wrapper2
 {
+  padding-left: 40%;
+  padding-right: 35%;
+  padding-top: 2%;
+}
+.wrapper2 a
+{
+  display: block;
+  align-self: right;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
   text-align: center;
-  padding-bottom: 2%;
+  position: relative;
+  transition: all .35s;
 }
+.wrapper2 a span
+{
+  position: relative;
+  z-index: 2;
+}
+.wrapper2 a:after
+{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #333;
+  transition: all .35s;
+}
+
+.wrapper2 a:hover{
+  color: #fff;
+}
+
+.wrapper2 a:hover:after{
+  width: 100%;
+}
+/*tradicion*/
+div.noticia {
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgba(68, 68, 153, 0);
+  color: black;
+  padding: 15px;
+}
+
+div.noticia img.izquierda {
+  width: 500px;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}
+
+div.noticia img.derecha {
+  float: right;
+  margin-left: 15px;
+}
+
+div.reset {
+  clear: both;
+}
+/*----------footer--------*/
 .footer
 {
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: #be9286;
   color: #333;
@@ -222,7 +287,6 @@ h1, h4, h3, h2, p
   font-size: 14px;
   line-height: 1.6;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,11 +295,12 @@ h1, h4, h3, h2, p
 {
   font-size: 13px;
   font-family: 'Libre Baskerville', serif;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .creditos
 {
   text-align: center;
-  padding-bottom: 2%;
 }
 /*---------Diseños del footer---------*/
 .footer-content {
@@ -250,7 +315,7 @@ h1, h4, h3, h2, p
 }
 .footer-content {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
 }
 

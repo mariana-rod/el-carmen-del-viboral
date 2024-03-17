@@ -393,33 +393,6 @@ left: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #cca69b;
-  color: #333;
-  text-align: center;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer p
-{
-  font-size: 13px;
-  font-family: 'Libre Baskerville', serif;
-}
-.creditos
-{
-  text-align: center;
-  padding-bottom: 2%;
-}
-.footer
-{
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #be9286;
   color: #333;
   text-align: center;
@@ -427,7 +400,6 @@ left: 10px;
   font-size: 14px;
   line-height: 1.6;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -436,11 +408,12 @@ left: 10px;
 {
   font-size: 13px;
   font-family: 'Libre Baskerville', serif;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .creditos
 {
   text-align: center;
-  padding-bottom: 2%;
 }
 /*---------Diseños del footer---------*/
 .footer-content {
@@ -455,7 +428,7 @@ left: 10px;
 }
 .footer-content {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
 }
 

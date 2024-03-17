@@ -208,12 +208,9 @@ main {
 {
   padding: 6%;
 }
-
-
+/*----------footer--------*/
 .footer
 {
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: #be9286;
   color: #333;
@@ -222,7 +219,6 @@ main {
   font-size: 14px;
   line-height: 1.6;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,11 +227,12 @@ main {
 {
   font-size: 13px;
   font-family: 'Libre Baskerville', serif;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .creditos
 {
   text-align: center;
-  padding-bottom: 2%;
 }
 /*---------Diseños del footer---------*/
 .footer-content {
@@ -250,7 +247,7 @@ main {
 }
 .footer-content {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -260,9 +257,6 @@ main {
   margin: 0;
   padding: 0;
 }
-
-
-
 .social-logo img {
   width: 30px;
   height: auto;

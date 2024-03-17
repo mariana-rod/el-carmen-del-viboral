@@ -3,9 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/carmen/images/favicon.png" type="image/x-icon">
-    <title>Calendar</title>
+    <title>Calendario</title>
 </head>
+<style>
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f2eee5;
+    }
+    iframe
+    {
+        width: 80%; /* Ajusta el ancho del calendario según tus preferencias */
+        max-width: 800px; /* Establece un máximo de ancho */
+        height: 600px;
+    }
+    
+</style>
 <body>
-    <iframe src="https://calendar.google.com/calendar/embed?src=bb0eca5e26a0ca50bf6820aaa3b921353c9769319c2e33f7f1850c4c100f0404%40group.calendar.google.com&ctz=America%2FBogota" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FBogota&bgcolor=%23fddada&showPrint=0&title=Eventos&src=YmIwZWNhNWUyNmEwY2E1MGJmNjgyMGFhYTNiOTIxMzUzYzk3NjkzMTljMmUzM2Y3ZjE4NTBjNGMxMDBmMDQwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuY28jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%230B8043" style="border:solid 1px #464545" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </body>
 </html>
